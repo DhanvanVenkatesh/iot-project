@@ -25,13 +25,13 @@ def predict():
     """
     st.markdown(html_temp, unsafe_allow_html=True)
 
-    nitrogen = st.text_input('nitrogen', "Type Here")
-    phosphorous = st.text_input('phosphorous', "Type Here")
-    potassium = st.text_input('potassium', "Type Here")
-    temp = st.text_input('temperature', "Type Here")
-    humidity = st.text_input('humidity', "Type Here")
-    ph = st.text_input('ph', "Type Here")
-    rainfall = st.text_input('rainfall', "Type Here")
+    nitrogen = st.text_input('nitrogen', "")
+    phosphorous = st.text_input('phosphorous', "")
+    potassium = st.text_input('potassium', "")
+    temp = st.text_input('temperature', "")
+    humidity = st.text_input('humidity', "")
+    ph = st.text_input('ph', "")
+    rainfall = st.text_input('rainfall', "")
     result = ""
     ans = ""
     if st.button("Predict"):
