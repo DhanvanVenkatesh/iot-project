@@ -41,7 +41,7 @@ def predict():
         ans = result[0]
 
     st.success('The output is {}'.format(ans))
-    return jsonify({'result':str(result)})
+    return st.json({'result':str(result)})
 
 
 if __name__ == '__main__':
