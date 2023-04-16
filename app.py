@@ -39,9 +39,9 @@ def predict():
             [[nitrogen, phosphorous, potassium, temp, humidity, ph, rainfall]])
         result = model.predict(input_query)
         ans = result[0]
-        return jsonify({'result':str(result)})
 
     st.success('The output is {}'.format(ans))
+    return jsonify({'result':str(result)})
 
 
 if __name__ == '__main__':
