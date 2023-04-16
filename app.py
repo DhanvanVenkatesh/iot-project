@@ -17,10 +17,10 @@ def index():
 # @app.route('/predict', methods=['POST'])
 def predict():
 
-    st.title("Bank Authenticator")
+    st.title("Crop Suggestion")
     html_temp = """
         <div style="background-color:tomato;padding:10px">
-        <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
+        <h2 style="color:white;text-align:center;">Find the Crop that suits You!! </h2>
         </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
@@ -40,8 +40,7 @@ def predict():
         result = model.predict(input_query)
         ans = result[0]
 
-    st.success('The output is {}'.format(ans))
-    return st.json({'result':str(result)})
+    st.success('Crop : {}'.format(ans))
 
 
 if __name__ == '__main__':
